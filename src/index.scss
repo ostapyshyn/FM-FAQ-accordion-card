@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  line-height: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+@mixin mq($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/*COLOURS*/
+$RED: hsl(0, 78%, 62%);
+$CYAN: hsl(180, 62%, 55%);
+$ORANGE: hsl(34, 97%, 64%);
+$BLUE: hsl(212, 86%, 64%);
+$VERY-DARK-BLUE: hsl(234, 12%, 34%);
+$GREY-BLUE: hsl(229, 6%, 66%);
+$LIGHT-GREY: hsl(0, 0%, 98%);
+$WHITE: hsl(0, 100%, 100%);
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

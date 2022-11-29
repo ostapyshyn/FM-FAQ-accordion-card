@@ -1,0 +1,15 @@
+@import '../../index.scss';
+
+main {
+  width: 100%;
+  max-width: 920px;
+  height: 509px;
+  background: #ffffff;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+  border-radius: 23px;
+
+  display: flex;
+  justify-content: flex-start;
+  gap: 87px;
+  align-items: center;
+}

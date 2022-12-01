@@ -1,6 +1,7 @@
 @import '../../index.scss';
 
 main {
+  position: relative;
   width: 100%;
   max-width: 920px;
   height: 509px;
@@ -12,9 +13,32 @@ main {
   justify-content: flex-start;
   gap: 87px;
   align-items: center;
+  overflow: hidden;
+
+  .box {
+    position: absolute;
+    top: 204px;
+    left: -84px;
+  }
+
+  .box_bg {
+    position: absolute;
+    top: 204px;
+    left: -84px;
+  }
 
   .faq,
   picture {
+    transform: translateX(-16%);
+  }
+  .faq {
+    display: flex;
     width: 100%;
+    max-width: 40%;
+    flex-direction: column;
+    gap: 16px;
+    .title {
+      margin-bottom: 27px;
+    }
   }
 }

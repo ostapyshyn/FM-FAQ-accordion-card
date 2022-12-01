@@ -4,6 +4,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 11px;
+    padding-right: 24px;
 
     .img {
       transform: rotate(180deg);
@@ -21,6 +23,8 @@ section {
       }
     }
   }
+  max-width: 350px;
+  width: 100%;
   border-bottom: 1px solid #e8e8ea;
   padding-bottom: 18px;
 }

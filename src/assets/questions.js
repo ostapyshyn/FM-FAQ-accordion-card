@@ -1,4 +1,4 @@
-export const questions = [
+const questions = [
   {
     id: 1,
     question: 'How many team members can I invite?',
@@ -28,3 +28,4 @@ export const questions = [
       'Chat and email support is available 24/7. Phone lines are open during normal business hours.',
   },
 ];
+export default questions;

@@ -8,6 +8,18 @@ section {
     .img {
       transform: rotate(180deg);
     }
+
+    .bold {
+      color: #1e1f36;
+      font-weight: 700;
+    }
+
+    .ask {
+      &:hover {
+        color: #f47b56;
+        cursor: pointer;
+      }
+    }
   }
   border-bottom: 1px solid #e8e8ea;
   padding-bottom: 18px;

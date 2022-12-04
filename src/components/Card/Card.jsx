@@ -11,10 +11,13 @@ import styles from './Card.module.scss';
 const Card = () => {
   return (
     <main>
-      <picture>
-        <source media="(min-width: 800px)" srcSet={woman} />
-        <img src={woman_mob} alt="woman" />
-      </picture>
+      <div className={styles.image}>
+        <picture>
+          <source media="(min-width: 800px)" srcSet={woman} />
+          <img src={woman_mob} alt="woman" />
+        </picture>
+      </div>
+
       <img src={box} alt="box" className={styles.box} />
       <img src={bg_desktop} alt="box" className={styles.box_bg} />
       <div className={styles.faq}>

@@ -4,21 +4,25 @@ main {
   position: relative;
   width: 100%;
   max-width: 920px;
-  max-height: 509px;
+  min-height: 509px;
   background: #ffffff;
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
   border-radius: 23px;
   padding-right: 24px;
   display: flex;
   justify-content: flex-start;
-  gap: 87px;
+  gap: 67px;
   align-items: center;
-  overflow: hidden;
+
+  .image {
+    overflow: hidden;
+  }
 
   .box {
     position: absolute;
-    top: 204px;
-    left: -84px;
+    top: 100px;
+    bottom: 0;
+    margin: auto -92px;
   }
 
   .box_bg {

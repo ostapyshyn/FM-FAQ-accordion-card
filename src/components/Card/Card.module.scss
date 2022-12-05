@@ -15,7 +15,26 @@ main {
   align-items: center;
 
   .image {
+    display: flex;
+    align-items: center;
+    height: 100%;
     overflow: hidden;
+    position: relative;
+    picture {
+      position: relative;
+      z-index: 2;
+    }
+    .pic {
+      z-index: 2;
+    }
+
+    .box_bg {
+      max-width: none;
+      position: absolute;
+      top: -293px;
+      left: -569px;
+      z-index: 1;
+    }
   }
 
   .box {
@@ -23,12 +42,7 @@ main {
     top: 100px;
     bottom: 0;
     margin: auto -92px;
-  }
-
-  .box_bg {
-    position: absolute;
-    top: -268px;
-    left: -517px;
+    z-index: 3;
   }
 
   .faq,

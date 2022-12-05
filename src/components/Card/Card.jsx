@@ -14,12 +14,13 @@ const Card = () => {
       <div className={styles.image}>
         <picture>
           <source media="(min-width: 800px)" srcSet={woman} />
-          <img src={woman_mob} alt="woman" />
+          <img src={woman_mob} alt="woman" className={styles.pic} />
         </picture>
+        <img src={bg_desktop} alt="box" className={styles.box_bg} />
       </div>
 
       <img src={box} alt="box" className={styles.box} />
-      <img src={bg_desktop} alt="box" className={styles.box_bg} />
+
       <div className={styles.faq}>
         <h1 className={styles.title}>FAQ</h1>
         {questions.map((question) => {

@@ -9,7 +9,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 11px;
     padding-right: 24px;
 
     .img {
@@ -30,6 +29,9 @@ section {
         cursor: pointer;
       }
     }
+  }
+  .answer {
+    margin-top: 11px;
   }
   max-width: 350px;
   width: 100%;

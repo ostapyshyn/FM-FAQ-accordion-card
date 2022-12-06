@@ -11,7 +11,7 @@ const Question = ({ question, answer }) => {
         <img src={arrow} alt="arrow" className={show && styles.img} />
       </div>
 
-      {show && <p>{answer}</p>}
+      {show && <p className={styles.answer}>{answer}</p>}
     </section>
   );
 };

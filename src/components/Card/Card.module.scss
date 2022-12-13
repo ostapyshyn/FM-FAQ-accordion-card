@@ -12,7 +12,7 @@ main {
   display: flex;
   justify-content: flex-start;
   gap: 67px;
-  align-items: center;
+  align-items: flex-start;
 
   .image {
     display: flex;
@@ -32,7 +32,9 @@ main {
     .box_bg {
       max-width: none;
       position: absolute;
-      top: -293px;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -58%);
       left: -569px;
       z-index: 1;
     }
@@ -44,6 +46,9 @@ main {
     bottom: 0;
     margin: auto -92px;
     z-index: 3;
+    @include mq(950px) {
+      display: none;
+    }
   }
 
   .faq,
@@ -56,12 +61,7 @@ main {
     max-width: 40%;
     flex-direction: column;
     gap: 16px;
-    .title {
-      margin-bottom: 27px;
-      font-weight: 700;
-      font-size: 32px;
-      line-height: 40px;
-      color: #1e1f36;
-    }
+    padding-block: 65px;
+    
   }
 }

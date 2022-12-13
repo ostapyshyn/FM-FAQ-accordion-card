@@ -11,30 +11,44 @@ section {
     justify-content: space-between;
     padding-right: 24px;
 
+    img {
+      transition: all 0.2s ease-in-out;
+    }
+
     .img {
       transform: rotate(180deg);
+    }
+
+    .ask {
+      font-size: 14px;
+      line-height: 17px;
+      &:hover {
+        color: #f47b56;
+        cursor: pointer;
+      }
     }
 
     .bold {
       color: #1e1f36;
       font-weight: 700;
     }
-
-    .ask {
-      font-size: 14px;
-      line-height: 17px;
-      color: #4b4c5f;
-      &:hover {
-        color: #f47b56;
-        cursor: pointer;
-      }
-    }
   }
   .answer {
     margin-top: 11px;
+    max-height: 36px;
+    transition: all 0.2s ease-in-out;
   }
   max-width: 350px;
   width: 100%;
   border-bottom: 1px solid #e8e8ea;
   padding-bottom: 18px;
+
+  .answer_wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: height ease 0.2s;
+  }
+  .open {
+    height: 50px;
+  }
 }

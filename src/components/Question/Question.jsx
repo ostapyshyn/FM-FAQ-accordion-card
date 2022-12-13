@@ -2,16 +2,18 @@ import React, { useState } from 'react';
 import arrow from '../../assets/icon-arrow-down.svg';
 import styles from './Question.module.scss';
 
-const Question = ({ question, answer }) => {
-  const [show, setShow] = useState(false);
+const Question = ({ question, answer, onToggle, active }) => {
   return (
-    <section onClick={() => setShow((prevState) => !prevState)}>
+    <section onClick={onToggle}>
       <div className={styles.question}>
-        <p className={`${styles.ask}  ${show && styles.bold}`}>{question}</p>
-        <img src={arrow} alt="arrow" className={show && styles.img} />
+        <p className={`${styles.ask}  ${active ? styles.bold : undefined}`}>{question}</p>
+        <img src={arrow} alt="arrow" className={active ? styles.img : undefined} />
       </div>
 
-      {show && <p className={styles.answer}>{answer}</p>}
+      <div className={`${styles.answer_wrapper} ${active ? styles.open : ''}`}>
+        <p className={styles.answer}>{answer}</p>
+      </div>
+      {/* {active ? <p className={styles.answer}>{answer}</p> : undefined} */}
     </section>
   );
 };

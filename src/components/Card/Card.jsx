@@ -24,9 +24,11 @@ const Card = () => {
     <main>
       <div className={styles.image}>
         <picture>
+          <source media="(max-width: 949px)" srcSet={woman_mob} />
           <source media="(min-width: 950px)" srcSet={woman} />
-          <img src={woman_mob} alt="woman" className={styles.pic} />
+          <img src={woman} alt="woman" className={styles.pic} />
         </picture>
+
         <img src={bg_desktop} alt="box" className={styles.box_bg} />
       </div>
 

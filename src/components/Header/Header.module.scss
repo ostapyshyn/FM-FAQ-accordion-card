@@ -1,7 +1,12 @@
+@import '../../index.scss';
 .title {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;
   color: #1e1f36;
+  @include mq(950px) {
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
 }

@@ -13,6 +13,11 @@ main {
   justify-content: flex-start;
   gap: 67px;
   align-items: flex-start;
+  @include mq(950px) {
+    gap: 0;
+    padding-left: 24px;
+    align-items: flex-end;
+  }
 
   .image {
     display: flex;
@@ -54,6 +59,9 @@ main {
   .faq,
   picture {
     transform: translateX(-16%);
+    @include mq(950px) {
+      transform: translateX(0);
+    }
   }
   .faq {
     display: flex;
@@ -61,7 +69,11 @@ main {
     max-width: 40%;
     flex-direction: column;
     gap: 16px;
-    padding-block: 65px;
-    
+    padding-top: 65px;
+    padding-bottom: 65px;
+    @include mq(950px) {
+      max-width: 100%;
+      padding-bottom: 48px;
+    }
   }
 }

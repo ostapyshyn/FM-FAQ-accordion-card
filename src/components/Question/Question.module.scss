@@ -10,6 +10,9 @@ section {
     align-items: center;
     justify-content: space-between;
     padding-right: 24px;
+    @include mq(950px) {
+      padding-right: 0px;
+    }
 
     img {
       transition: all 0.2s ease-in-out;
@@ -22,6 +25,7 @@ section {
     .ask {
       font-size: 14px;
       line-height: 17px;
+      color: #4b4c5f;
       &:hover {
         color: #f47b56;
         cursor: pointer;
@@ -43,12 +47,16 @@ section {
   border-bottom: 1px solid #e8e8ea;
   padding-bottom: 18px;
 
+  @include mq(950px) {
+    max-width: 100%;
+  }
+
   .answer_wrapper {
     height: 0;
     overflow: hidden;
     transition: height ease 0.2s;
   }
-  .open {
-    height: 50px;
-  }
+  // .open {
+  //   height: 50px;
+  // }
 }

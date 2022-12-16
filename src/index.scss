@@ -44,6 +44,11 @@ h6 {
     @content;
   }
 }
+@mixin minq($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
 
 html:focus-within {
   scroll-behavior: smooth;

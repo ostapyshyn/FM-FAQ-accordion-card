@@ -3,6 +3,7 @@ import woman from '../../assets/illustration-woman-online-desktop.svg';
 import woman_mob from '../../assets/illustration-woman-online-mobile.svg';
 import box from '../../assets/illustration-box-desktop.svg';
 import bg_desktop from '../../assets/bg-pattern-desktop.svg';
+import bg_mobile from '../../assets/bg-pattern-mobile.svg';
 import questions from '../../assets/questions.js';
 import Question from '../Question';
 
@@ -23,13 +24,15 @@ const Card = () => {
   return (
     <main>
       <div className={styles.image}>
-        <picture>
-          <source media="(max-width: 949px)" srcSet={woman_mob} />
-          <source media="(min-width: 950px)" srcSet={woman} />
+        <picture className={styles.img_big}>
           <img src={woman} alt="woman" className={styles.pic} />
+        </picture>
+        <picture className={styles.img_small}>
+          <img src={woman_mob} alt="woman" className={styles.pic} />
         </picture>
 
         <img src={bg_desktop} alt="box" className={styles.box_bg} />
+        <img src={bg_mobile} alt="box" className={styles.bg_mobile} />
       </div>
 
       <img src={box} alt="box" className={styles.box} />
